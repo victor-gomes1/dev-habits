@@ -33,6 +33,18 @@ A documentação completa do ciclo de vida do software encontra-se na pasta `doc
 
 ---
 
+## 🌿 Fluxo de Branches e Git Flow
+
+O projeto segue rigorosamente o fluxo de trabalho **Git Flow** para garantir a estabilidade do código em produção e a organização das entregas académicas:
+
+- **`main`**: Branch principal de produção. Contém apenas versões estáveis e testadas do código. Nenhuns commits são feitos diretamente aqui.
+- **`develop`**: Branch de integração para o desenvolvimento contínuo. Todas as novas funcionalidades e ajustes são integrados aqui antes de irem para a `main`.
+- **`feature/*`**: Branches temáticas criadas a partir da `develop` para resolver *Issues* específicas do backlog (ex: `feature/issue-01-setup-projeto`, `feature/issue-05-cadastro-tarefa`).
+
+Utilizamos o padrão de **Conventional Commits** (ex: `feat:`, `docs:`, `fix:`) e **Semantic Versioning (SemVer)** para marcar os marcos de entrega.
+
+---
+
 ## ⚙️ Configuração e Execução Local
 
 1. Clone o repositório:
